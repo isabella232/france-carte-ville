@@ -312,9 +312,6 @@
         self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
 
-            if ( $("#ServiceType").val() != "")
-            self.whereClause += " AND newregion = '" + $("#ServiceType").val() + "'";
-
 
         //-----end of custom filters-----
 
