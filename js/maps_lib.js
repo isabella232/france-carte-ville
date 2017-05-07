@@ -312,6 +312,10 @@
         self.whereClause += " AND " + type_column + " IN ('" + tempWhereClause.join("','") + "')";
 
 
+        if ( $("#select_type").val() != "")
+      self.whereClause += " AND 'newregion' = '" + $("#select_type").val() + "'";
+
+
 
         //-----end of custom filters-----
 
